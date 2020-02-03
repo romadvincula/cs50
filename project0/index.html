@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My Webpage</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="static/style.css">
+	</head>
+    <body>
+        <header>
+			<div class="jumbotron jumbotron-fluid header">
+				<div class="container container-fluid">
+					<h1 class="display-3">
+						Hello World!
+					<p class="lead">A website for pset0 of CS50 Web Programming with Python and Javascript. It contains examples of different type of web pages utilizing HTML5, CSS, Bootstrap, and SASS.</p>	
+					<!-- <p class="lead"></p> -->
+					<hr class="my-4">
+					</h1>
+				</div>
+			</div>
+			<div id="stripe">
+				<!-- Nav bar that's stacked on small screens and vertically aligned on big screens -->
+				<div class="container">
+					<nav class="nav nav-tabs nav-justified flex-column flex-sm-row">
+								<a class="nav-item nav-link active" href="#">Blogs</a>
+								<a class="nav-item nav-link" href="#">Forms</a>
+								<a class="nav-item nav-link" href="#">Tables</a>
+								<a class="nav-item nav-link" href="#">Album</a>
+						</nav>
+				</div>
+			</div>
+		</header>
+		<main id="blog">
+			<div class="container">
+				<div class="row">
+					<div class="blog-post">
+						<div class="blog-date">
+							<h3>February 3, 2020</h3>
+						</div>
+						<h2 class="blog-h2">The latest blogpost</h2>
+						<p class="blog-quote">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend imperdiet urna, id <span>nulla finibus a</span>. Suspendisse blandit lorem quis magna tempus, vitae fringilla libero vestibulum. Donec tincidunt neque quis condimentum viverra. Morbi elementum elit eu tempus venenatis. Suspendisse dapibus nunc et egestas commodo. Praesent laoreet urna quis nisi facilisis blandit. Duis vel risus a lacus pellentesque sollicitudin.
+						</p>
+						<p>
+							Integer et diam pellentesque, tempus ipsum facilisis, commodo quam. Proin iaculis lectus et vehicula scelerisque. Aliquam commodo tempor malesuada. Aenean varius nunc ac mi sollicitudin, quis fringilla elit euismod. Ut venenatis est vulputate ligula pharetra pulvinar. Proin felis magna, <span>tristique non ultrices eget</span>, mollis ut nisi. Nunc vel efficitur orci. Aenean sed velit ultricies lacus efficitur ultricies eget vitae turpis. Cras dui ex, tempus eget laoreet eu, rhoncus ut lacus. Integer sollicitudin est ut mollis dapibus. Morbi tortor leo, vulputate in euismod vel, euismod non tortor. Sed consectetur, eros vel tempor rutrum, magna mauris euismod lacus, sit amet aliquam ligula mi eu mauris.
+						</p>
+						<p>
+							<span>Nunc interdum malesuada quam,</span> in tincidunt enim bibendum vitae. Donec quis quam tincidunt, placerat urna vel, varius odio. Pellentesque vel sapien vel leo aliquam ultricies. Pellentesque commodo, nulla vitae feugiat vulputate, felis mauris ullamcorper metus, non bibendum mauris justo quis magna. In condimentum, orci id lacinia congue, massa arcu ullamcorper erat, in accumsan mi augue id nulla. Praesent sit amet dui ornare, posuere elit eu, fringilla lectus. Cras eget accumsan risus. Vivamus maximus ante purus, fermentum tristique magna pretium et. Nullam viverra sem dolor, iaculis ultricies ligula tempor eget. Mauris eget imperdiet velit. Etiam quam est, fermentum sed condimentum in, porttitor pellentesque elit.
+						</p>
+					</div>
+					<div class="col hr-div">
+						<hr class="blog-hr">
+					</div>
+					<div class="blog-post">
+						<div class="blog-date">
+							<h3>February 1, 2020</h3>
+						</div>
+						<h2 class="blog-h2">Another post</h2>
+						<p class="blog-quote">
+							Morbi gravida dui ut mauris eleifend, luctus euismod velit faucibus. Nulla sit amet nibh dapibus, tempus odio sit amet, efficitur quam. Integer risus enim, molestie ac porta ut, pulvinar nec lorem. Proin ut nisl non massa elementum vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean vestibulum justo a congue rutrum. Phasellus sit amet turpis quis nunc sodales sollicitudin. Sed gravida libero dictum <span>tincidunt interdum</span>. 
+						</p>
+						<p>
+							Phasellus fringilla sed elit feugiat pellentesque. Morbi at euismod purus, sed auctor mauris. Quisque molestie rhoncus risus, eget fermentum risus bibendum in. Donec sodales ipsum nec ultrices mollis. In vel interdum ligula, nec semper purus. Suspendisse at felis non dui mattis ultricies sit amet a nunc. Phasellus porttitor semper leo, quis mattis nibh suscipit imperdiet. Aenean ut sem eget mauris blandit mollis nec in arcu. Nullam molestie nec tellus in vulputate. Vivamus et rhoncus ante, quis finibus arcu. Etiam a tempus nulla. Sed mauris nisl, fermentum id neque non, euismod scelerisque massa. Pellentesque at arcu vel enim venenatis tristique.
+						</p>
+					</div>
+					<div class="container">
+						<nav aria-label="Page navigation example">
+							<ul class="pagination justify-content-center">
+							  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+							  <li class="page-item"><a class="page-link" href="#">1</a></li>
+							  <li class="page-item"><a class="page-link" href="#">2</a></li>
+							  <li class="page-item"><a class="page-link" href="#">3</a></li>
+							  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</main>	
+        <footer>
+            <div class="container">
+				<div class="alert alert-info">
+					<p>
+						If you want to get started in web dev, check out <a href="https://cs50.harvard.edu/web/">CS50 Web Programming with Python and Javascript</a>
+					</p>
+				</div>
+            </div>
+        </footer>
+    </body>
+</html>
