@@ -1,0 +1,180 @@
+$blogBorderColor: #bdc3c7;
+$blogDateColor: #3498db;
+$blogH2Color: #2c3e50;
+$albumPColor: #f1f1f1;
+$tttBigSize: 577px;
+$tttBig: 100px;
+$tttBigColor: cornsilk;
+$tttSmallSize: 576px;
+$tttSmall: 50px;
+$tttSmallColor: burlywood;
+$tttColor: #2c3e50;
+$formsColor: #aeeddb;
+
+div section p {
+    background-color: aquamarine;
+    margin: 50px;
+    border: black solid 1px;
+    padding: 50px;
+    color: blue;
+    position: relative;
+}
+
+span {
+    font-weight: bold;
+    color: maroon;
+}
+
+#stripe {
+    background-color: azure;
+}
+
+.header {
+    margin-bottom: 0px;
+}
+
+footer {
+    text-align: center;
+}
+
+@media print {
+    .screen-only {
+        visibility: hidden;
+    }
+}
+
+/* Blog */
+#blog {
+    background-color: cornsilk;
+    border: 20px solid $blogBorderColor;
+    padding: 20px;
+    max-width: 700px;
+    width: 80%;
+    margin: 20px auto;
+    font-family: Source Sans Pro;
+}
+
+.blog-quote {
+    border-left: 5px solid $blogBorderColor;
+    padding-left: 5px;
+}
+
+.blog-date {
+    color: $blogDateColor;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.blog-h2 {
+    color: $blogH2Color;
+    font-size: 2.0rem;
+    text-transform: capitalize;
+}
+
+.hr-div {
+    padding-top: 5px;
+}
+
+.blog-hr {
+    overflow: visible;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    padding-top: 3px;
+}
+
+.blog-hr:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+/* End blog */
+
+/* Album */
+#album img {
+    width: 30%;
+    float: left;
+    // margin: 1.66%;
+    padding: 1.66%
+}
+
+#album img:hover {
+    background-color: lavender;
+}
+
+#album p {
+    font-family: Raleway, sans-serif;
+    margin-left: 1.66%;
+    font-size: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 2px solid $albumPColor;
+    width: 30%;
+    padding-bottom: 1rem;
+    margin: 1rem 0 0 0;
+}
+/* End album */
+
+/* Tictactoe */
+#tictactoe h3 {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+#tictactoe .vertical {
+    border-left: 1px solid $tttColor;
+    border-right: 1px solid $tttColor;
+
+}
+
+#tictactoe .horizontal {
+    border-top: 1px solid $tttColor;
+    border-bottom: 1px solid $tttColor;
+}
+
+#tictactoe table {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+@media (min-width: $tttBigSize) {
+    #tictactoe table {
+        background-color: $tttBigColor;
+    }
+    
+    #tictactoe td {
+        width: $tttBig;
+        height: $tttBig;
+    }
+}
+
+@media (max-width: $tttSmallSize) {
+    #tictactoe table {
+        background-color: $tttSmallColor;
+    }
+    
+    #tictactoe td {
+        width: $tttSmall;
+        height: $tttSmall;
+    }
+}
+/* End tictactoe */
+
+// Forms
+#form > div {
+    background-color: $formsColor;
+    padding: 1rem;
+}
+
+// #form h3 {
+//     margin-top: 1rem;
+// }
+// End form

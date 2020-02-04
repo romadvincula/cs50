@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My Webpage</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="static/style.css">
+	</head>
+    <body>
+        <header>
+			<div class="jumbotron jumbotron-fluid header">
+				<div class="container container-fluid">
+					<h1 class="display-3">
+						Hello World!
+					<p class="lead">A website for pset0 of CS50 Web Programming with Python and Javascript. It contains examples of different type of web pages utilizing HTML5, CSS, Bootstrap, and SASS.</p>
+					<hr class="my-4">
+					</h1>
+				</div>
+			</div>
+			<div id="stripe">
+				<!-- Nav bar that's stacked on small screens and vertically aligned on big screens -->
+				<div class="container">
+					<nav class="nav nav-tabs nav-justified flex-column flex-sm-row">
+								<a class="nav-item nav-link" href="index.html">Blogs</a>
+								<a class="nav-item nav-link active" href="#">Forms</a>
+								<a class="nav-item nav-link" href="tictactoe.html">Tic Tac Toe</a>
+								<a class="nav-item nav-link" href="album.html">Album</a>
+						</nav>
+				</div>
+			</div>
+		</header>
+		<main id="form">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<h3 class="font-weight-light">Examples of some forms a user might need to submit</h3>
+				</div>
+				<hr>
+				<div class="row d-flex justify-content-center">
+					<h3 class="font-weight-light">Login</h3>
+				</div>
+				<div class="row d-flex justify-content-center">
+					<form class="Login">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+								<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							</div>
+							<div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Remember me</label>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+				<hr>
+				<div class="row d-flex justify-content-center">
+					<h3 class="font-weight-light">Register</h3>
+				</div>
+				<div class="row row d-flex justify-content-center">
+					<form class="register">
+						<div class="form-group">
+							<input class="form-control" id="fname" type="text" placeholder="First Name" required>
+						</div>
+						<div class="form-group">
+							<input class="form-control" id="lname" type="text" placeholder="Last Name" required>
+						</div>
+						<div class="form-group">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="gender" id="male" value="male">
+								<label class="form-check-label" for="male">Male</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="gender" id="female" value="female">
+								<label class="form-check-label" for="female">Female</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="gender" id="unspecified" value="unspecified">
+								<label class="form-check-label" for="unspecified">Unspecified</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<input class="form-control" id="registerEmail" type="email" placeholder="Email" required>
+						</div>
+						<div class="form-group">
+							<input class="form-control" id="registerPassword" type="password" placeholder="Password" required>
+						</div>
+						<div class="form-group">
+							<input class="form-control" id="registerConfirm" type="password" placeholder="Confirm password" required>
+						</div>
+						<div class="form-group">
+							<label class="col-form-label" for="birthday">Birthday</label>
+							<input class="form-control" name="birthMonth" list="birthmonth" placeholder="Month">
+							<datalist id="birthmonth">
+								<option value="January">
+								<option value="February">
+								<option value="March">
+								<option value="April">
+								<option value="May">
+								<option value="June">
+								<option value="July">
+								<option value="August">
+								<option value="September">
+								<option value="October">
+								<option value="November">
+								<option value="December">
+							</datalist>
+							<input class="form-control" name="birthDay" list="birthday" placeholder="Day">
+							<datalist id="birthday">
+								<option value="1">
+								<option value="2">
+								<option value="3">
+								<option value="4">
+								<option value="5">
+								<option value="6">
+								<option value="7">
+								<option value="8">
+								<option value="9">
+								<option value="10">
+								<option value="11">
+								<option value="12">
+								<option value="13">
+								<option value="14">
+								<option value="15">
+								<option value="16">
+								<option value="17">
+								<option value="18">
+								<option value="19">
+								<option value="20">
+								<option value="21">
+								<option value="22">
+								<option value="23">
+								<option value="24">
+								<option value="25">
+								<option value="26">
+								<option value="27">
+								<option value="28">
+								<option value="29">
+								<option value="30">
+								<option value="31">
+							</datalist>
+							<input class="form-control" id="birthyear" type="number" placeholder="Year" min="1900" max="2020" value="2020">
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>	
+        <footer>
+            <div class="container screen-only">
+				<div class="alert alert-info">
+					<p>
+						If you want to get started in web dev, check out <a href="https://cs50.harvard.edu/web/">CS50 Web Programming with Python and Javascript</a>
+					</p>
+				</div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My Webpage</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="static/style.css">
+	</head>
+    <body>
+        <header>
+			<div class="jumbotron jumbotron-fluid header">
+				<div class="container container-fluid">
+					<h1 class="display-3">
+						Hello World!
+					<p class="lead">A website for pset0 of CS50 Web Programming with Python and Javascript. It contains examples of different type of web pages utilizing HTML5, CSS, Bootstrap, and SASS.</p>
+					<hr class="my-4">
+					</h1>
+				</div>
+			</div>
+			<div id="stripe">
+				<!-- Nav bar that's stacked on small screens and vertically aligned on big screens -->
+				<div class="container">
+					<nav class="nav nav-tabs nav-justified flex-column flex-sm-row">
+								<a class="nav-item nav-link active" href="#">Blogs</a>
+								<a class="nav-item nav-link" href="form.html">Forms</a>
+								<a class="nav-item nav-link" href="tictactoe.html">Tic Tac Toe</a>
+								<a class="nav-item nav-link" href="album.html">Album</a>
+						</nav>
+				</div>
+			</div>
+		</header>
+		<main id="blog">
+			<div class="container">
+				<div class="row">
+					<div class="blog-post">
+						<div class="blog-date">
+							<h3>January 1, 2020</h3>
+						</div>
+						<h2 class="blog-h2">Happy New Year, Hello 2020!!!</h2>
+						<p class="blog-quote text-justify">
+							Nunc scelerisque ligula in blandit tristique. Suspendisse facilisis, ligula malesuada tempor feugiat, risus odio posuere diam, at congue turpis diam quis turpis. Sed id magna in purus varius pulvinar ac sit amet turpis. Sed consectetur augue vel magna lacinia vehicula. Pellentesque mattis condimentum erat eu faucibus. Morbi quis nibh sit amet est volutpat bibendum. Aenean et accumsan orci, nec blandit est. Integer placerat sagittis tortor, ac luctus felis scelerisque in.
+						</p>
+						<p class="text-justify">
+							Proin quis placerat libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum vehicula, magna id ultricies viverra, massa ante mattis dolor, ac sollicitudin lacus mi at metus. Aliquam ac nibh tempus, pulvinar nibh vestibulum, vehicula urna. Praesent tempus purus erat, ut posuere est vestibulum in. Suspendisse maximus scelerisque massa. Nam luctus leo ut urna consequat, ac finibus tellus efficitur. Curabitur aliquet blandit est, sed convallis ex volutpat eu. Morbi leo justo, vehicula ut tempor eu, tempor quis nulla. Suspendisse potenti. Nunc dolor elit, gravida eu urna eu, efficitur faucibus arcu. 
+						</p>
+						<p class="text-justify">
+							<span>accumsan egestas dapibus</span>. In non bibendum orci, nec auctor enim. Integer ac felis a ligula cursus maximus at sit amet odio. Nam non dui odio. Aenean enim lacus, aliquet eget purus vitae, auctor mattis sem. Fusce lobortis est sit amet risus efficitur sagittis et non lacus. Donec in risus vel ex vestibulum placerat. Ut efficitur enim arcu, quis feugiat lectus aliquet a. 
+						</p>
+					</div>
+					<div class="container">
+						<nav aria-label="Page navigation example">
+							<ul class="pagination justify-content-center">
+							  <li class="page-item"><a class="page-link" href="blog1.html">Previous</a></li>
+							  <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+							  <li class="page-item"><a class="page-link" href="blog1.html">2</a></li>
+							  <li class="page-item active"><a class="page-link" href="#">3</a></li>
+							  <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</main>	
+        <footer>
+            <div class="container screen-only">
+				<div class="alert alert-info">
+					<p>
+						If you want to get started in web dev, check out <a href="https://cs50.harvard.edu/web/">CS50 Web Programming with Python and Javascript</a>
+					</p>
+				</div>
+            </div>
+        </footer>
+    </body>
+</html>

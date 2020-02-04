@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My Webpage</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link rel="stylesheet" href="static/style.css">
+	</head>
+    <body>
+        <header>
+			<div class="jumbotron jumbotron-fluid header">
+				<div class="container container-fluid">
+					<h1 class="display-3">
+						Hello World!
+					<p class="lead">A website for pset0 of CS50 Web Programming with Python and Javascript. It contains examples of different type of web pages utilizing HTML5, CSS, Bootstrap, and SASS.</p>
+					<hr class="my-4">
+					</h1>
+				</div>
+			</div>
+			<div id="stripe">
+				<!-- Nav bar that's stacked on small screens and vertically aligned on big screens -->
+				<div class="container">
+					<nav class="nav nav-tabs nav-justified flex-column flex-sm-row">
+								<a class="nav-item nav-link" href="index.html">Blogs</a>
+								<a class="nav-item nav-link" href="form.html">Forms</a>
+								<a class="nav-item nav-link active" href="#">Tic Tac Toe</a>
+								<a class="nav-item nav-link" href="album.html">Album</a>
+						</nav>
+				</div>
+			</div>
+		</header>
+		<main id="tictactoe">
+			<div class="container">
+				<div class="row">
+					<h3>A Tic Tac Toe template using tables</h3>
+				</div>
+				<div class="row">
+					<table>
+						<tbody>
+							<tr>
+								<td></td>
+								<td class="vertical"></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td  class="horizontal"></td>
+								<td class="vertical horizontal"></td>
+								<td  class="horizontal"></td> 
+							</tr>
+							<tr>
+								<td></td>
+								<td class="vertical"></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</main>	
+        <footer>
+            <div class="container screen-only">
+				<div class="alert alert-info">
+					<p>
+						If you want to get started in web dev, check out <a href="https://cs50.harvard.edu/web/">CS50 Web Programming with Python and Javascript</a>
+					</p>
+				</div>
+            </div>
+        </footer>
+    </body>
+</html>
