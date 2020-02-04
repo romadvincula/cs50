@@ -11,14 +11,14 @@ $tttSmallColor: burlywood;
 $tttColor: #2c3e50;
 $formsColor: #aeeddb;
 
-div section p {
-    background-color: aquamarine;
-    margin: 50px;
-    border: black solid 1px;
-    padding: 50px;
-    color: blue;
-    position: relative;
-}
+// div section p {
+//     background-color: aquamarine;
+//     margin: 50px;
+//     border: black solid 1px;
+//     padding: 50px;
+//     color: blue;
+//     position: relative;
+// }
 
 span {
     font-weight: bold;
@@ -43,11 +43,15 @@ footer {
     }
 }
 
+%mainbody {
+    padding: 20px;
+}
+
 /* Blog */
 #blog {
+    @extend %mainbody;
     background-color: cornsilk;
     border: 20px solid $blogBorderColor;
-    padding: 20px;
     max-width: 700px;
     width: 80%;
     margin: 20px auto;
@@ -99,50 +103,58 @@ footer {
 /* End blog */
 
 /* Album */
-#album img {
-    width: 30%;
-    float: left;
-    // margin: 1.66%;
-    padding: 1.66%
-}
+#album {
+    @extend %mainbody;
+    
+    img {
+        width: 30%;
+        float: left;
+        // margin: 1.66%;
+        padding: 1.66%;
+    }
 
-#album img:hover {
-    background-color: lavender;
-}
+    img:hover {
+        background-color: lavender;
+    }
 
-#album p {
-    font-family: Raleway, sans-serif;
-    margin-left: 1.66%;
-    font-size: 23px;
-    font-weight: 800;
-    text-transform: uppercase;
-    border-bottom: 2px solid $albumPColor;
-    width: 30%;
-    padding-bottom: 1rem;
-    margin: 1rem 0 0 0;
+    p {
+        font-family: Raleway, sans-serif;
+        margin-left: 1.66%;
+        font-size: 23px;
+        font-weight: 800;
+        text-transform: uppercase;
+        border-bottom: 2px solid $albumPColor;
+        width: 30%;
+        padding-bottom: 1rem;
+        margin: 1rem 0 0 0;
+    }
 }
 /* End album */
 
 /* Tictactoe */
-#tictactoe h3 {
-    text-align: left;
-    margin-top: 1rem;
-}
+#tictactoe {
+    @extend %mainbody;
 
-#tictactoe .vertical {
-    border-left: 1px solid $tttColor;
-    border-right: 1px solid $tttColor;
+    h3 {
+        text-align: left;
+        margin-top: 1rem;
+    }
 
-}
+    .vertical {
+        border-left: 1px solid $tttColor;
+        border-right: 1px solid $tttColor;
+    
+    }
 
-#tictactoe .horizontal {
-    border-top: 1px solid $tttColor;
-    border-bottom: 1px solid $tttColor;
-}
+    .horizontal {
+        border-top: 1px solid $tttColor;
+        border-bottom: 1px solid $tttColor;
+    }
 
-#tictactoe table {
-    margin: auto;
-    margin-bottom: 10px;
+    table {
+        margin: auto;
+        margin-bottom: 10px;
+    }
 }
 
 @media (min-width: $tttBigSize) {
@@ -169,12 +181,38 @@ footer {
 /* End tictactoe */
 
 // Forms
-#form > div {
-    background-color: $formsColor;
-    padding: 1rem;
+#form {
+    @extend %mainbody;
+
+    > div {
+        background-color: $formsColor;
+        padding: 1rem;
+    }
 }
 
-// #form h3 {
-//     margin-top: 1rem;
-// }
+%message {
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 10px;
+    width: 250px;
+    margin: 20px;
+}
+
+.success {
+    @extend %message;
+    background-color: green;
+}
+
+.warning {
+    @extend %message;
+    background-color: orange;
+}
+
+.error {
+    @extend %message;
+    background-color: red;
+}
+
 // End form
